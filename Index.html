@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud Notes App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>☁ Cloud Notes</h1>
+
+      <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Search notes..."
+      />
+    </div>
+
+    <div class="note-form">
+      <input
+        type="text"
+        id="title"
+        placeholder="Enter note title"
+      />
+
+      <textarea
+        id="content"
+        placeholder="Write your note here..."
+      ></textarea>
+
+      <button class="btn" onclick="addNote()">
+        Save Note
+      </button>
+    </div>
+
+    <div id="notesContainer" class="notes-container"></div>
+
+    <div id="emptyMessage" class="empty">
+      No notes available.
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
